@@ -1,0 +1,90 @@
+generated: '2026-08-01'
+method: probed
+source: live probes of Miso Robotics + Zignyl/Zippy hosts
+note: >-
+  Probed the standard /.well-known/ discovery surface plus the common OpenAPI/Swagger
+  and llms.txt locations across every Miso Robotics host and the hosts of Zippy (the
+  acquired Zignyl restaurant-operations app). Nothing returned 200. Recorded here as
+  honest negative results. No WellKnown, SecurityTxt, AgentCard, OpenAPI or LLMsTxt
+  pointer is emitted from this probe because nothing was found. api.misorobotics.com,
+  app.misorobotics.com, docs.misorobotics.com, developer.misorobotics.com and
+  api.zignyl.com do not resolve (connection failure, recorded as status 0).
+hosts:
+- host: https://misorobotics.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /swagger.json, status: 404}
+  - {path: /llms.txt, status: 404}
+- host: https://www.misorobotics.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /swagger.json, status: 404}
+  - {path: /llms.txt, status: 404}
+- host: https://info.misorobotics.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /llms.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+- host: https://invest.misorobotics.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /llms.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+- host: https://api.misorobotics.com
+  resolves: false
+  documents:
+  - {path: /.well-known/security.txt, status: 0}
+  - {path: /.well-known/agent-card.json, status: 0}
+  - {path: /openapi.json, status: 0}
+- host: https://docs.misorobotics.com
+  resolves: false
+  documents:
+  - {path: /.well-known/security.txt, status: 0}
+  - {path: /.well-known/agent-card.json, status: 0}
+  - {path: /openapi.json, status: 0}
+- host: https://developer.misorobotics.com
+  resolves: false
+  documents:
+  - {path: /.well-known/security.txt, status: 0}
+  - {path: /.well-known/agent-card.json, status: 0}
+  - {path: /openapi.json, status: 0}
+- host: https://zignyl.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+  - {path: /openapi.json, status: 404}
+  - {path: /llms.txt, status: 404}
+- host: https://app.zignyl.com
+  note: ASP.NET Core application; every unknown path 302-redirects to /error/500
+  documents:
+  - {path: /.well-known/security.txt, status: 302, redirect: /error/500}
+  - {path: /.well-known/openid-configuration, status: 302, redirect: /error/500}
+  - {path: /.well-known/agent-card.json, status: 302, redirect: /error/500}
+  - {path: /.well-known/agent.json, status: 302, redirect: /error/500}
+  - {path: /openapi.json, status: 302, redirect: /error/500}
+  - {path: /swagger/v1/swagger.json, status: 302, redirect: /error/500}
+  - {path: /swagger, status: 302, redirect: /error/500}
+  - {path: /api-docs, status: 302, redirect: /error/500}
+  - {path: /llms.txt, status: 302, redirect: /error/500}

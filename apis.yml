@@ -1,8 +1,20 @@
 aid: miso-robotics
 name: Miso Robotics
-description: 'Miso Robotics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Miso Robotics is a Pasadena, California kitchen-automation company that
+  builds AI-powered robotics and restaurant operations software for commercial food
+  service. Its flagship product, Flippy, is an autonomous fry station that uses computer
+  vision and NVIDIA-accelerated motion planning to identify food items, detect doneness
+  and run up to 100 baskets per hour on existing commercial fryers from Frymaster,
+  Henny Penny and Pitco. Miso also ships Zippy (built on the acquired Zignyl platform),
+  a real-time digital shift manager for forecasting, scheduling, task management, incentives
+  and payroll that connects to restaurant point-of-sale systems. Customers include
+  White Castle, Jack in the Box, CaliBurger and Auntie Anne''s. Miso publishes no public
+  developer API, no OpenAPI/AsyncAPI contract and no SDKs; its integrations are delivered
+  as private partner connections (Toast, PAR and other POS vendors) arranged through
+  sales, and its public GitHub organization carries ROS/robotics and cloud-infrastructure
+  forks used internally rather than a client-facing API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/miso-robotics/refs/heads/main/apis.yml
+image: https://www.misorobotics.com/hs-fs/hubfs/Miso_Logo_RAI_4C.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +24,14 @@ created: '2026-08-01'
 modified: '2026-08-01'
 tags:
 - Company
+- Robotics
+- Kitchen Automation
+- Restaurants
+- Food Service
+- Artificial Intelligence
+- Computer Vision
+- Workforce Management
+- Point of Sale
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,44 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/miso-robotics-domain-security.yml
+- type: LLMsTxt
+  url: llms/miso-robotics-llms.txt
 - type: Website
+  url: https://www.misorobotics.com/
+- type: Products
+  url: https://www.misorobotics.com/products
+- type: Blog
+  url: https://www.misorobotics.com/blogs
+- type: BlogRSS
+  url: https://misorobotics.com/rss.xml
+- type: Support
+  url: https://www.misorobotics.com/support-faqs
+- type: PrivacyPolicy
+  url: https://www.misorobotics.com/privacy-policy
+- type: TermsOfService
+  url: https://www.misorobotics.com/terms-of-use
+- type: GitHubOrganization
+  url: https://github.com/MisoRobotics
+- type: Press
+  url: https://www.misorobotics.com/newsroom-press-media-kit
+- type: CaseStudies
+  url: https://www.misorobotics.com/case-studies
+- type: Videos
+  url: https://www.misorobotics.com/videos
+- type: Careers
+  url: https://www.misorobotics.com/careers
+- type: ContactUs
+  url: https://www.misorobotics.com/contact-us
+- type: Demo
+  url: https://www.misorobotics.com/book-a-demo
+- type: InvestorRelations
+  url: https://www.misorobotics.com/investor-relations
+- type: Investment
   url: https://forgeglobal.com/miso-robotics_stock/
+x-enrichment:
+  date: '2026-08-01'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
