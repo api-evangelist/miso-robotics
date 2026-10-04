@@ -52,7 +52,7 @@ tags:
 - Restaurant
 - Food Service
 - Artificial Intelligence
-- Computer-Vision
+- Computer Vision
 - Workforce Management
 - Point-of-Sale
 tags_raw:
@@ -65,6 +65,7 @@ tags_raw:
 - Computer Vision
 - Workforce Management
 - Point of Sale
+- Computer-Vision
 apis: []
 maintainers:
 - FN: Kin Lane
