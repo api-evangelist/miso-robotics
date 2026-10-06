@@ -44,7 +44,7 @@ x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.23'
 created: '2026-08-01'
-modified: '2026-08-01'
+modified: '2026-10-06'
 tags:
 - Company
 - Robotics
@@ -73,6 +73,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://info.misorobotics.com/rss.xml
+  type: BlogRSS
 - type: DomainSecurity
   url: security/miso-robotics-domain-security.yml
 - type: LLMsTxt
