@@ -64,49 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Miso Robotics is a Pasadena, California kitchen-automation company that builds AI-powered
-robotics and restaurant operations software for commercial food service. Its flagship
-product, **Flippy**, is an autonomous fry station that uses computer vision and
-NVIDIA-accelerated motion planning to identify food items, detect doneness and run up to
-100 baskets per hour on existing commercial fryers (Frymaster, Henny Penny, Pitco). Miso
-also ships **Zippy**, built on the acquired **Zignyl** platform — a real-time digital shift
-manager for forecasting, scheduling, task management, incentives and payroll that connects
-to restaurant point-of-sale systems.
+Miso Robotics is a Pasadena, California kitchen-automation company that builds AI-powered robotics and restaurant operations software for commercial food service. Its flagship product, Flippy, is an autonomous fry station that uses computer vision and NVIDIA-accelerated motion planning to identify food items, detect doneness and run up to 100 baskets per hour on existing commercial fryers from Frymaster, Henny Penny and Pitco. Miso also ships Zippy (built on the acquired Zignyl platform), a real-time digital shift manager for forecasting, scheduling, task management, incentives and payroll that connects to restaurant point-of-sale systems. Customers include White Castle, Jack in the Box, CaliBurger and Auntie Anne's. Miso publishes no public developer API, no OpenAPI/AsyncAPI contract and no SDKs; its integrations are delivered as private partner connections (Toast, PAR and other POS vendors) arranged through sales, and its public GitHub organization carries ROS/robotics and cloud-infrastructure forks used internally rather than a client-facing API surface.
 
-## API surface
+**Areas:** Company · Robotics · Kitchen Automation · Restaurant · Food Service · Artificial Intelligence · Computer Vision · Workforce Management · Point-of-Sale
 
-**No public developer API.** As of 2026-08-01 the enrichment pipeline found no
-OpenAPI/Swagger contract, no GraphQL endpoint, no AsyncAPI or webhook catalog, no MCP
-server, no A2A agent card, no SDKs in any public package registry, and no developer
-portal, documentation site or API reference. Point-of-sale integrations (Toast, PAR and
-others, inherited with the Zignyl acquisition) are private partner connections arranged
-through sales rather than a self-serve public API.
+## Miso Robotics on APIs.io
 
-Hosts probed: `misorobotics.com`, `www.misorobotics.com`, `info.misorobotics.com`,
-`invest.misorobotics.com`, `zignyl.com`, `app.zignyl.com`, plus non-resolving
-`api.` / `app.` / `docs.` / `developer.misorobotics.com` and `api.zignyl.com`.
-Full results in `well-known/miso-robotics-well-known.yml`.
+Everything profiled for Miso Robotics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/miso-robotics/](https://apis.io/providers/miso-robotics/)** — or go straight to one of the APIs or properties below.
 
-The public GitHub organization [MisoRobotics](https://github.com/MisoRobotics) carries 120
-repositories, predominantly forks of ROS/robotics (MoveIt2, rosbridge_suite, librealsense,
-apriltag_ros) and cloud-infrastructure projects (Terraform modules, Google Cloud Build
-tooling). None is a client SDK for a Miso API.
+### Published properties
 
-> Note: the `@miso.ai/*` npm packages and `docs.miso.ai` belong to **Miso Technologies**
-> (search/recommendation AI), a different company — they are not Miso Robotics artifacts.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Artifacts
+#### Security (1)
 
-- `security/miso-robotics-domain-security.yml` — probed TLS/HSTS/DNSSEC/CAA/SPF/DMARC
-- `well-known/miso-robotics-well-known.yml` — probed `/.well-known/` + spec-path discovery (all negative)
-- `llms/miso-robotics-llms.txt` — generated llms.txt
+Authentication, trust centre, and vulnerability disclosure.
 
-## Links
+- [Miso Robotics Domain Security](https://apis.io/security/miso-robotics/miso-robotics-domain-security/)
 
-- Website — https://www.misorobotics.com/
-- Products — https://www.misorobotics.com/products
-- Blog — https://www.misorobotics.com/blogs (RSS: https://misorobotics.com/rss.xml)
-- Support & FAQs — https://www.misorobotics.com/support-faqs
-- Newsroom — https://www.misorobotics.com/newsroom-press-media-kit
-- GitHub — https://github.com/MisoRobotics
-- Secondary market — https://forgeglobal.com/miso-robotics_stock/
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.misorobotics.com/)
+- [Support](https://www.misorobotics.com/support-faqs)
+- [Blog](https://www.misorobotics.com/blogs)
+- [Terms of service](https://www.misorobotics.com/terms-of-use)
+- [Privacy policy](https://www.misorobotics.com/privacy-policy)
+- [GitHub](https://github.com/MisoRobotics)
+
+## API Evangelist rating
+
+**Kin Score 11.2** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 12.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/miso-robotics/](https://apis.io/providers/miso-robotics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Miso Robotics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/miso-robotics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
